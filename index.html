@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- // Starter code from: HelloTriangle.js (c) 2012 matsuda
+//*******************************
+//*Name: Leo Gomez              *
+//*Login: legomez               *
+//*SID: 1360609                 *
+//*Lab#: 3                      *
+//*file: index.html             *
+//*class: CMPS - 160L           *
+//*description:                 *
+//*the index file for lab3 that *
+//*takes in a toggle button, 3  * 
+//*slider RGB values, and a     *
+//*specular slider value for the*
+//*rendered object              *
+//*******************************
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rendering Object</title>
+	</head>
+
+	<body onload="main()">
+		<canvas id="webgl" width="400" height="400">
+			Your browser does not support HTML5
+		</canvas>
+		<br />
+		<i>Pick Files below for Rendering</i>
+		<script src="../lib/webgl-utils.js"></script>
+		<script src="../lib/webgl-debug.js"></script>
+		<script src="../lib/cuon-utils.js"></script>
+		<script src="../lib/cuon-matrix.js"></script>
+		<script src="Picking.js"></script><br />
+		<text>Pick a .coor file----></text>
+		<input type="file" id="infile1"></input><br />
+		<text>Pick a .poly file----></text>
+		<input type="file" id="infile2"></input><br />
+		<text>Ortho or Perspective? --->
+		<button id="button" onclick="setView()" style="background-color:#00DD00">Ortho</button><br />
+		<text>COLOR:</text><br />
+		<text>R--></text>
+		<input type="range" id="R" min="0" max="50" value="35" step="5"</input>
+		<text>G-->:</text>
+		<input type="range" id="G" min="0" max="50" value="15" step="5" </input>
+		<text>B-->:</text>
+		<input type="range" id="B" min="0" max="50" value="25" step="5"</input>
+		<text>Specularity-->:</text>
+		<input type="range" id="spec" min="0" max="50" value="0" step="1"</input><br />
+		
+		
+	</body>
+</html>
